@@ -1,0 +1,14 @@
+<h3>{{content.name}}</h3>
+
+<h4>Price: {{content.price}}</h4>
+
+{{#unless addedToCart}}
+	<button {{action 'addToCart' content}}>Add to Cart</button>
+{{else}}
+	<p>Added to cart</p>
+{{/unless}}
+
+<div class="description">
+	<h6>DESCRIPTION</h6>
+	{{controller.description}}
+</div>
