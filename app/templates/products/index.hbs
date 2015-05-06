@@ -1,12 +1,12 @@
 <h2>Products</h2>
 
 {{#each row in rows}}
-	<div class="row">
+	<div class="row product__row">
 	{{#each product in row}}
 		<div class="col-md-4">
-			{{#link-to 'product' product}}
+			<div {{action "goToProduct" product}}>
 			{{product-list-item name=product.name price=product.price}}
-			{{/link-to}}
+			</div>
 		</div>
 	{{/each}}
 	</div>
