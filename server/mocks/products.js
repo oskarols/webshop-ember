@@ -7,43 +7,43 @@ module.exports = function(app) {
       'products': [
       {
         id: 1,
-        name: 'LawnMower 1',
+        name: 'Red stapler',
         price: 20
       },
       {
         id: 2,
-        name: 'LawnMower 2',
-        price: 30
+        name: 'Extra wide Fancypants',
+        price: 100
       },
       {
         id: 3,
-        name: 'LawnMower 3',
-        price: 50
+        name: 'Birkenstock',
+        price: 75
       },
       {
         id: 4,
-        name: 'LawnMower 54',
-        price: 80
+        name: 'Smartwool Socks 3-pack',
+        price: 199
       },
       {
         id: 5,
-        name: 'LawnMower 33',
-        price: 50
+        name: 'HDMI Kabel 20m',
+        price: 299
       },
       {
         id: 6,
-        name: 'LawnMower 63',
-        price: 50
+        name: 'Beard Trimmer',
+        price: 499
       },
       {
         id: 7,
-        name: 'LawnMower 73',
+        name: 'Sharkbait',
         price: 50
       },
       {
         id: 8,
-        name: 'LawnMower 13',
-        price: 50
+        name: 'Linkbait Large',
+        price: 99
       },]
     });
   });
