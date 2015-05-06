@@ -1,0 +1,63 @@
+@import "bower_components/bootstrap/less/bootstrap.less";
+
+
+body {
+	background-color: #e7e7e7;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.navbar__header {
+	margin-top: 0;
+}
+
+.shoppingcart__container {
+	.glyphicon {
+		margin-right:10px;
+	}
+}
+
+.product__container {
+	padding:10px;
+	background-color: white;
+	position: relative;
+
+	&:hover {
+		background-color: rgb(237, 237, 237);
+		box-shadow: 0px 0px 5px gray;
+		cursor: pointer;
+	}
+
+	.product__name, .product__price {
+		display:inline-block;
+		color:black;
+	}
+
+
+	.product__name {
+		font-size:20px;
+
+		vertical-align: bottom;
+		width:70%;
+
+	}
+
+	.product__price {
+		width:25%;
+		text-align: right;
+	}
+
+	.product__image {
+		overflow:hidden;
+	}
+}
+
+
+
+.product__row {
+	margin-bottom:20px;
+}
