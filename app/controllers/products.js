@@ -24,7 +24,7 @@ var ContentRowMixin = Ember.Mixin.create({
 
 		return rows;
 	}.property('content.@each')
-})
+});
 
 export default Ember.ArrayController.extend(ContentRowMixin, {
 	ITEMS_PER_ROW: 3

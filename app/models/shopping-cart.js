@@ -1,8 +1,4 @@
-import Ember from 'ember';
 import DS from 'ember-data';
-
-var attr = DS.attr,
-	hasMany = DS.hasMany;
 
 var Cookies = window.Cookies,
 	PRODUCT_COOKIE_KEY = 'cartproducts';

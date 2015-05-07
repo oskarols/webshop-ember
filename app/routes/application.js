@@ -12,7 +12,7 @@ export default Ember.Route.extend({
 	setupController: function(controller, model) {
 		this._super(controller, model);
 
-		var shoppingCart = this.store.createRecord('shopping-cart', {})
+		var shoppingCart = this.store.createRecord('shopping-cart', {});
 		controller.set('shoppingCart', shoppingCart);
 
 		var self = this,
