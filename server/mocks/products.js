@@ -42,9 +42,24 @@ module.exports = function(app) {
       },
       {
         id: 8,
-        name: 'Linkbait Large',
+        name: 'Linkbait Large Can',
         price: 99
-      },]
+      },
+      {
+        id: 9,
+        name: 'Game of Thrones — Death Scenes Only Edition',
+        price: 199
+      },
+      {
+        id: 10,
+        name: 'Foundation Series — Asimov',
+        price: 49
+      },
+      {
+        id: 11,
+        name: 'Shurikens',
+        price: 699
+      }]
     });
   });
 

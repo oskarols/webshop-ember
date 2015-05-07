@@ -6,11 +6,13 @@ export default Ember.Route.extend({
 		return this.store.find('product', params.id);
 	},
 
-	afterModel: function(model, transition) {
+	afterModel: function(model) {
 		var id = model.get('id'),
 			controller = this.controllerFor('product');
 
-		if (id === undefined) return;
+		if (id === undefined) {
+			return;
+		}
 
 		var fetchedDetails = ajax('/api/product_details/' + id);
 

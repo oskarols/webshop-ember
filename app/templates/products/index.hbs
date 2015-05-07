@@ -3,7 +3,7 @@
 {{#each row in rows}}
 	<div class="row product__row">
 	{{#each product in row}}
-		<div class="col-md-4">
+		<div class="col-md-4 col-xs-6">
 			<div {{action "goToProduct" product}}>
 			{{product-list-item name=product.name price=product.price}}
 			</div>
@@ -11,4 +11,5 @@
 	{{/each}}
 	</div>
 {{/each}}
+
 

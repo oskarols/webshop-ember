@@ -1,14 +1,19 @@
-<h3>{{content.name}}</h3>
 
-<h4>Price: {{content.price}}</h4>
+<div class="row ">
+	<div class="col-md-12 product_details__container">
+	<h3>{{content.name}}</h3>
 
-{{#unless addedToCart}}
-	<button {{action 'addToCart' content}}>Add to Cart</button>
-{{else}}
-	<p>Added to cart</p>
-{{/unless}}
+	<h4>Price: {{content.price}} kr</h4>
 
-<div class="description">
-	<h6>DESCRIPTION</h6>
-	{{controller.description}}
+	{{#unless addedToCart}}
+		<button class="btn btn-lg btn-success" {{action 'addToCart' content}}>Add to Cart</button>
+	{{else}}
+		<p>Added to cart</p>
+	{{/unless}}
+
+	<div class="description">
+		<h6>DESCRIPTION</h6>
+		{{controller.description}}
+	</div>
+	</div>
 </div>

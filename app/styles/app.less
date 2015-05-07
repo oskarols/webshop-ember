@@ -25,6 +25,7 @@ body {
 	padding:10px;
 	background-color: white;
 	position: relative;
+	margin-bottom:30px;
 
 	&:hover {
 		background-color: rgb(237, 237, 237);
@@ -44,20 +45,27 @@ body {
 		vertical-align: bottom;
 		width:70%;
 
+		@media (max-width: @screen-sm-min) {
+			font-size: 14px;
+		}
+
 	}
 
 	.product__price {
+
 		width:25%;
 		text-align: right;
+
+		@media (max-width: @screen-sm-min) {
+			font-size: 14px;
+		}
 	}
 
 	.product__image {
 		overflow:hidden;
 	}
 }
-
-
-
-.product__row {
-	margin-bottom:20px;
+.product_details__container {
+	background-color: white;
+	padding: 10px;
 }
